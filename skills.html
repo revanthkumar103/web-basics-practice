@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revanth | Skills</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills | Revanth Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1f4037, #99f2c8);
-      color: #fff;
-      min-height: 100vh;
+    * {
       margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+      min-height: 100vh;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 30px;
+      padding: 40px 20px;
     }
 
-    h1 {
-      margin-bottom: 20px;
-      font-size: 2.5rem;
-    }
-
-    .skills {
+    nav {
+      width: 100%;
+      max-width: 1000px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffeb3b;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    .skills-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      max-width: 800px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .skills-card h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 20px;
     }
 
-    .skill-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 15px;
-      text-align: center;
-      width: 150px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(5px);
-    }
-
-    .skill-card i {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .skill-card p {
-      font-size: 1rem;
+    .skill {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 15px;
       font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      background-color: rgba(255, 255, 255, 0.3);
     }
   </style>
 </head>
 <body>
 
-  <h1>💡 My Skills</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com/revanthkumar103" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/revanth-kumar-92a27a336" target="_blank">LinkedIn</a>
+  </nav>
 
-  <div class="skills">
-    <div class="skill-card">
-      <i class="fab fa-python"></i>
-      <p>Python</p>
-    </div>
-    <div class="skill-card">
-      <i class="fas fa-shield-alt"></i>
-      <p>Cybersecurity</p>
-    </div>
-    <div class="skill-card">
-      <i class="fab fa-html5"></i>
-      <p>HTML</p>
-    </div>
-    <div class="skill-card">
-      <i class="fab fa-css3-alt"></i>
-      <p>CSS</p>
-    </div>
-    <div class="skill-card">
-      <i class="fas fa-database"></i>
-      <p>MongoDB (Learning)</p>
-    </div>
-    <div class="skill-card">
-      <i class="fas fa-code"></i>
-      <p>Java (Learning)</p>
+  <div class="skills-card">
+    <h2>🚀 My Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">VS Code</div>
+      <div class="skill">Cybersecurity (Basics)</div>
+      <div class="skill">React (Learning)</div>
     </div>
   </div>
-  <div style="margin-top: 20px;">
-    <a href="index.html" style="color: white; text-decoration: underline;">← Back to Home</a>
-  </div>
-  
+
 </body>
 </html>
