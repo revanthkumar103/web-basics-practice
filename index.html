@@ -2,77 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Revanth Kumar | Student Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revanth Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
     }
 
     body {
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 40px 20px;
     }
 
-    .card {
+    nav {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffeb3b;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    .intro-card {
       background: rgba(255, 255, 255, 0.1);
-      padding: 40px;
       border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 40px;
       text-align: center;
-      max-width: 500px;
-      width: 90%;
+      max-width: 700px;
       backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    h1 {
+    .intro-card h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
 
-    p {
+    .intro-card p {
       font-size: 1.1rem;
-      margin-bottom: 10px;
+      margin: 10px 0;
     }
 
-    .links a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .buttons a {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #3a1c71;
+      border-radius: 30px;
       font-weight: 600;
-      transition: 0.3s ease;
+      text-decoration: none;
+      transition: 0.3s;
     }
 
-    .links a:hover {
-      color: #ffd700;
-    }
-
-    .emoji {
-      font-size: 2rem;
-      margin-bottom: 15px;
+    .buttons a:hover {
+      background-color: #3a1c71;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="emoji">🚀</div>
-    <h1>Hey, I'm Revanth Kumar</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com/revanthkumar103" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/revanth-kumar-92a27a336" target="_blank">LinkedIn</a>
+  </nav>
+
+  <div class="intro-card">
+    <h1>🚀 Hey, I'm Revanth Kumar</h1>
     <p>💻 2nd Year B.Tech CSBS Student</p>
     <p>🎓 RMK Engineering College, Chennai</p>
-    <p>🔥 Future CISO | Passionate About Tech, Cybersecurity, and Startups</p>
-     <div class="links">
-        <a href="https://github.com/revanthkumar103" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/revanth-kumar-92a27a336" target="_blank">LinkedIn</a>
-        <a href="skills.html">My Skills</a>
-      </div>
+    <p>🔥 Future CISO | Passionate About Tech, Cybersecurity, Startups</p>
+
+    <div class="buttons">
+      <a href="skills.html">My Skills</a>
+      <a href="projects.html">My Projects</a>
+      <a href="https://github.com/revanthkumar103" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/revanth-kumar-92a27a336" target="_blank">LinkedIn</a>
+    </div>
   </div>
+
 </body>
 </html>
